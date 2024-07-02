@@ -22,11 +22,16 @@ services:
     App\Controller\User\AuthController:
         autowire: true
         public: true
+        
+    App\Controller\TaskController:
+        autowire: true
+        public: true
 
     App\Security\UserEnabledChecker:
         tags:
             - { name: 'monolog.logger', channel: 'security' }
             - { name: 'security.user_checker', alias: 'app.user_checker' }
+
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
