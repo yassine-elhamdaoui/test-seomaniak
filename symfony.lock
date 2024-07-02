@@ -70,7 +70,7 @@
         "files": [
             "./.env.test",
             "./phpunit.xml.dist",
-            "./tests/bootstrap.php"
+            "./tests/bootstrap.php"]},
     "stof/doctrine-extensions-bundle": {
         "version": "1.12",
         "recipe": {
